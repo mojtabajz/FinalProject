@@ -1,0 +1,34 @@
+{
+    "timestamp": "2025-09-28 00:55:26",
+    "config": {
+        "DATA_PATH_TRAIN": "./data/match_data_4030611.csv",
+        "DATA_PATH_TEST": "./data/labeled_data.csv",
+        "BERT_MODEL_NAME": "HooshvareLab/bert-fa-base-uncased",
+        "MAX_LEN": 64,
+        "BATCH_SIZE": 8,
+        "BERT_EPOCHS": 3,
+        "LEARNING_RATE": 1e-05,
+        "GRADIENT_ACCUMULATION_STEPS": 4,
+        "ENSEMBLE_WEIGHTS": {
+            "bert": 2.0,
+            "svm": 1.0,
+            "logreg": 1.0,
+            "fasttext": 1.0
+        },
+        "GPU_USAGE_LIMIT": 0.8,
+        "USE_HALF_PRECISION": true,
+        "SVM_C": 10.0,
+        "LOGREG_C": 1.0,
+        "FASTTEXT_EPOCHS": 100,
+        "FASTTEXT_LR": 0.1,
+        "FASTTEXT_WORDNGRAMS": 6
+    },
+    "individual_model_results": {
+        "svm": {
+            "accuracy": 0.6888888888888889,
+            "precision": 0.6281094119068971,
+            "recall": 0.5863778676756874,
+            "f1_score": 0.5867342644344244
+        }
+    }
+}
